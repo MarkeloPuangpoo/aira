@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AIRA Monitor 🇹🇭
 
-## Getting Started
+**ระบบติดตามสถานการณ์ฝุ่นและน้ำเพื่อประชาชน | Air Quality & Flood Monitoring for Thailand**
 
-First, run the development server:
+![AIRA Monitor Banner](/public/og-image.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> "ลมหายใจของคุณ... ให้เราดูแล"
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+AIRA Monitor is a **"God-tier"** responsive web application designed to provide real-time monitoring of PM 2.5 air quality and flood situations across Thailand. Built with modern web technologies, it delivers a premium, smooth, and accessible user experience on every device.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-   **Real-time PM 2.5 Monitoring**: Visualizes air quality indices (AQI) from stations across Thailand using the [WAQI API](https://waqi.info/).
+-   **Flood Situation Layer**: Interleaves flood data from GISTDA to help users stay safe during rainy seasons.
+-   **AI-Powered Insights**: Provides smart health recommendations and "vibes" based on current weather and pollution levels.
+-   **Interactive Map**: Powered by MapLibre GL for smooth zooming, panning, and station selection.
+-   **Responsive Design**: A fully fluid, mobile-first interface that looks stunning on everything from an iPhone SE to a 4K desktop.
+-   **Bilingual Support**: Seamlessly toggles between Thai (TH) and English (EN).
 
-## Learn More
+## 🛠 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+-   **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+-   **Language**: [TypeScript](https://www.typescriptlang.org/)
+-   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) (utilizing `oklch` colors and CSS variables)
+-   **Map Engine**: [MapLibre GL JS](https://maplibre.org/)
+-   **Icons**: [Lucide React](https://lucide.dev/)
+-   **Fonts**: Geist Sans & Geist Mono
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
 
-## Deploy on Vercel
+-   Node.js 18+ or Bun
+-   npm or yarn or pnpm or bun
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/aira-monitor.git
+    cd aira-monitor
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    # or
+    bun install
+    ```
+
+3.  Configure Environment Variables:
+    Create a `.env.local` file in the root directory and add your API keys:
+    ```env
+    NEXT_PUBLIC_AQI_TOKEN=your_waqi_api_token
+    NEXT_PUBLIC_GISTDA_KEY=your_gistda_api_key
+    ```
+
+4.  Run the development server:
+    ```bash
+    npm run dev
+    ```
+
+5.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 📱 Global Responsiveness
+
+AIRA Monitor is designed with a "Mobile-First" philosophy:
+-   **Mobile**: Bottom-sheet style panels, thumb-friendly navigation.
+-   **Desktop**: Floating glass-morphism panels and expansive map views.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1.  Fork the project
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+  Designed with ❤️ for Thai People by <strong>AIRA Team</strong>
+</p>
