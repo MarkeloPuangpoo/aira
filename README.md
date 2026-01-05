@@ -85,5 +85,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  Designed with ❤️ for Thai People by <strong>AIRA Team</strong>
+  Designed for Thai People by <strong>AIRA Team</strong>
 </p>
