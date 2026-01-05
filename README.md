@@ -2,7 +2,7 @@
 
 **ระบบติดตามสถานการณ์ฝุ่นและน้ำเพื่อประชาชน | Air Quality & Flood Monitoring for Thailand**
 
-![AIRA Monitor Banner](/public/og-image.png)
+![AIRA Monitor Banner](src/app/og-image.png)
 
 > "ลมหายใจของคุณ... ให้เราดูแล"
 
